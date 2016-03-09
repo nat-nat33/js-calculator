@@ -21,54 +21,44 @@ var calculatorModule = function (){
       return _total;
     }
 
+    function add(x){
+      _total += x;
+      return _total;
+    }
+
+    function subtract(x){
+      _total = _total-x; 
+      return _total;
+    }
+
+    function multiply(x){
+      _total= _total * x;
+      return _total;
+    }
+
+    function divide(x){
+      _total= _total/x;
+      return _total;
+    }
+
+    function recallMemory(){
+      return _memory;
+    }
+
 
     return{
       load: calculateTotal, 
-      getTotal: getTotal
+      getTotal: getTotal,
+      add: add,
+      subtract: subtract,
+      multiply: multiply,
+      divide: divide,
+      recallMemory: recallMemory,
 
 };
 
 
 };
-
-
-
-
-
-  /**
-   * Return the value of `total`
-   * @return { Number }
-   */
-
-
-  /**
-   * Sums the value passed in with `total`
-   * @param { Number } x
-   */
-
-
-  /**
-   * Subtracts the value passed in from `total`
-   * @param  { Number } x
-   */
-
-
-  /**
-   * Multiplies the value by `total`
-   * @param  { Number } x
-   */
-
-
-  /**
-   * Divides the value passing in by `total`
-   * @param  { Number } x
-   */
-
-
-  /**
-   * Return the value stored at `memory`
-   * @return { Number }
-   */
 
 
   /**
